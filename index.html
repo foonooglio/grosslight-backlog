@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grosslight Consulting — Backlog</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8fafc; color: #1e293b; }
+    header { background: #15803d; color: white; padding: 1.25rem 2rem; display: flex; align-items: center; gap: 1rem; }
+    header h1 { font-size: 1.25rem; font-weight: 700; }
+    header span { font-size: 0.75rem; background: white; color: #15803d; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 9999px; }
+    .subtitle { font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem; }
+    .board { display: flex; gap: 1rem; padding: 1.5rem; overflow-x: auto; min-height: calc(100vh - 80px); align-items: flex-start; }
+    .column { background: #e2e8f0; border-radius: 0.75rem; padding: 1rem; min-width: 280px; max-width: 300px; flex-shrink: 0; }
+    .column-header { font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: space-between; }
+    .count { background: #94a3b8; color: white; font-size: 0.7rem; padding: 0.1rem 0.5rem; border-radius: 9999px; font-weight: 700; }
+    .done .column-header { color: #15803d; }
+    .done .count { background: #15803d; }
+    .in-progress .column-header { color: #1d4ed8; }
+    .in-progress .count { background: #1d4ed8; }
+    .todo .column-header { color: #64748b; }
+    .card { background: white; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 0.5rem; font-size: 0.85rem; line-height: 1.4; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 3px solid transparent; }
+    .done .card { border-left-color: #15803d; color: #475569; }
+    .in-progress .card { border-left-color: #1d4ed8; font-weight: 500; }
+    .todo .card { border-left-color: #e2e8f0; }
+    .section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8; margin: 1rem 0 0.4rem; padding-left: 0.25rem; }
+    .updated { text-align: center; font-size: 0.7rem; color: #94a3b8; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🐄 Grosslight Consulting — Build Backlog</h1>
+      <div class="subtitle">Last updated: 2026-03-31 · Managed by Aku</div>
+    </div>
+  </header>
+
+  <div class="board">
+
+    <!-- DONE -->
+    <div class="column done">
+      <div class="column-header">✅ Done <span class="count">16</span></div>
+      <div class="card">VPS setup (Hetzner, Ubuntu, OpenClaw)</div>
+      <div class="card">Anthropic API connected</div>
+      <div class="card">Discord + Telegram channels</div>
+      <div class="card">Obsidian vault synced via Git to VPS</div>
+      <div class="card">GitHub API integration</div>
+      <div class="card">Vercel API integration</div>
+      <div class="card">Cloudflare DNS API (full automation)</div>
+      <div class="card">Automated deploy pipeline proven</div>
+      <div class="card">Note Standards + vault structure</div>
+      <div class="card">Current-State.md cross-channel sync</div>
+      <div class="card">Launch Plan v2.0</div>
+      <div class="card">Client Profile Form (with A/B routing)</div>
+      <div class="card">Type A Intake Form v1.0</div>
+      <div class="card">Type B Intake Form v1.0</div>
+      <div class="card">Hall of Alchemy pipeline documented</div>
+      <div class="card">Sect Governance document</div>
+    </div>
+
+    <!-- IN PROGRESS -->
+    <div class="column in-progress">
+      <div class="column-header">🔄 In Progress <span class="count">2</span></div>
+      <div class="card">Tech Stack notes (Vercel, GitHub, Cloudflare, Anthropic)</div>
+      <div class="card">Backlog kanban page at /backlog</div>
+    </div>
+
+    <!-- TO DO — ordered by dependency -->
+    <div class="column todo">
+      <div class="column-header">📋 To Do <span class="count">27</span></div>
+
+      <div class="section-label">Process Layer</div>
+      <div class="card">Master Build Prompt Template</div>
+      <div class="card">Brief Builder agent spec + system prompt</div>
+      <div class="card">Researcher agent spec + system prompt</div>
+      <div class="card">Prompt Architect agent spec + system prompt</div>
+      <div class="card">Vibe Coder Outer Disciple formal spec</div>
+      <div class="card">Test each Hall of Alchemy agent in isolation</div>
+      <div class="card">Run full simulated case study</div>
+
+      <div class="section-label">Vibe Coder Production Readiness</div>
+      <div class="card">Supabase account setup + project template</div>
+      <div class="card">Auth layer design (before Supabase)</div>
+      <div class="card">Supabase integration into standard build template</div>
+      <div class="card">QA checklist formalized in Vibe Coder spec</div>
+      <div class="card">Standard build checklist automated</div>
+
+      <div class="section-label">Website & Landing Page</div>
+      <div class="card">Landing page design + copy</div>
+      <div class="card">Landing page deployed to grosslightconsulting.com</div>
+      <div class="card">Socratic AI chatbot embedded on landing page</div>
+      <div class="card">$50 discovery call booking (Calendly)</div>
+      <div class="card">Two portfolio case study cards on landing page</div>
+      <div class="card">About section (Charles's background)</div>
+
+      <div class="section-label">Portfolio Case Studies</div>
+      <div class="card">Case study #1 — brief, build, deploy, document</div>
+      <div class="card">Case study #2 — brief, build, deploy, document</div>
+
+      <div class="section-label">Client Operations</div>
+      <div class="card">Per-client project note template</div>
+      <div class="card">Per-client Discord channel setup process</div>
+      <div class="card">Client agent persona template</div>
+      <div class="card">Pricing framework written</div>
+      <div class="card">Positioning one-pager written</div>
+
+      <div class="section-label">Full Dry Run</div>
+      <div class="card">Full client journey dry run</div>
+      <div class="card">First real client engaged</div>
+    </div>
+
+  </div>
+
+  <div class="updated">This page is managed by Aku and updated after each sprint.</div>
+</body>
+</html>
