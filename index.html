@@ -19,6 +19,8 @@
     .in-progress .column-header { color: #1d4ed8; }
     .in-progress .count { background: #1d4ed8; }
     .todo .column-header { color: #64748b; }
+    .backburner .column-header { color: #6d28d9; }
+    .backburner .count { background: #6d28d9; }
     .card { background: white; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 0.5rem; font-size: 0.85rem; line-height: 1.4; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 3px solid transparent; }
     .done .card { border-left-color: #15803d; color: #475569; }
     .in-progress .card { border-left-color: #1d4ed8; font-weight: 500; }
@@ -107,9 +109,35 @@
       <div class="card">Pricing framework written</div>
       <div class="card">Positioning one-pager written</div>
 
+      <div class="section-label">Email & Comms</div>
+      <div class="card">Brand Supabase transactional emails (password reset, etc.) when needed</div>
+
       <div class="section-label">Full Dry Run</div>
       <div class="card">Full client journey dry run</div>
       <div class="card">First real client engaged</div>
+    </div>
+
+    <!-- BACKBURNER -->
+    <div class="column backburner">
+      <div class="column-header">🔵 Backburner <span class="count" id="backburner-count">10</span></div>
+
+      <div class="section-label">Cost & Token Tracking</div>
+      <div class="card">Token logging on API calls → Supabase</div>
+      <div class="card">Cost Monitor Disciple (daily API charge checker)</div>
+      <div class="card">Tax Doc Builder Disciple (quarterly expense report)</div>
+
+      <div class="section-label">AI Architecture</div>
+      <div class="card">Evangelion Grand Elder Council (3-model consensus system)</div>
+      <div class="card">Status Dashboard — live token feed (after token logging built)</div>
+
+      <div class="section-label">Automation Disciples</div>
+      <div class="card">Domain Health Monitor Disciple (subdomain uptime checks)</div>
+      <div class="card">Kanban Sync Disciple (verbal update → backlog auto-update)</div>
+
+      <div class="section-label">Channels (Deferred)</div>
+      <div class="card">WhatsApp channel (after first paying client)</div>
+      <div class="card">Email channel via Gmail Pub/Sub (needs Tailscale + gcloud)</div>
+      <div class="card">Voice channels (OpenClaw voice not supported yet)</div>
     </div>
 
   </div>
