@@ -9,7 +9,6 @@
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8fafc; color: #1e293b; }
     header { background: #15803d; color: white; padding: 1.25rem 2rem; display: flex; align-items: center; gap: 1rem; }
     header h1 { font-size: 1.25rem; font-weight: 700; }
-    header span { font-size: 0.75rem; background: white; color: #15803d; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 9999px; }
     .subtitle { font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem; }
     .board { display: flex; gap: 1rem; padding: 1.5rem; overflow-x: auto; min-height: calc(100vh - 80px); align-items: flex-start; }
     .column { background: #e2e8f0; border-radius: 0.75rem; padding: 1rem; min-width: 280px; max-width: 300px; flex-shrink: 0; }
@@ -40,7 +39,7 @@
 
     <!-- DONE -->
     <div class="column done">
-      <div class="column-header">✅ Done <span class="count">16</span></div>
+      <div class="column-header">✅ Done <span class="count">22</span></div>
       <div class="card">VPS setup (Hetzner, Ubuntu, OpenClaw)</div>
       <div class="card">Anthropic API connected</div>
       <div class="card">Discord + Telegram channels</div>
@@ -57,18 +56,23 @@
       <div class="card">Type B Intake Form v1.0</div>
       <div class="card">Hall of Alchemy pipeline documented</div>
       <div class="card">Sect Governance document</div>
+      <div class="card">Accounts & Tech Stack note</div>
+      <div class="card">Backlog kanban page deployed</div>
+      <div class="card">Supabase account + org connected</div>
+      <div class="card">Auth layer design (RLS, roles, org isolation)</div>
+      <div class="card">Supabase standard schema deployed to DB</div>
+      <div class="card">Iglesias Dairy — Supabase auth + login page (DEMO #7)</div>
     </div>
 
     <!-- IN PROGRESS -->
     <div class="column in-progress">
-      <div class="column-header">🔄 In Progress <span class="count">2</span></div>
+      <div class="column-header">🔄 In Progress <span class="count">1</span></div>
       <div class="card">Tech Stack notes (Vercel, GitHub, Cloudflare, Anthropic)</div>
-      <div class="card">Backlog kanban page at /backlog</div>
     </div>
 
-    <!-- TO DO — ordered by dependency -->
+    <!-- TO DO -->
     <div class="column todo">
-      <div class="column-header">📋 To Do <span class="count">27</span></div>
+      <div class="column-header">📋 To Do <span class="count">25</span></div>
 
       <div class="section-label">Process Layer</div>
       <div class="card">Master Build Prompt Template</div>
@@ -80,9 +84,7 @@
       <div class="card">Run full simulated case study</div>
 
       <div class="section-label">Vibe Coder Production Readiness</div>
-      <div class="card">Supabase account setup + project template</div>
-      <div class="card">Auth layer design (before Supabase)</div>
-      <div class="card">Supabase integration into standard build template</div>
+      <div class="card">Migrate Iglesias Dairy pages to Supabase (replace localStorage)</div>
       <div class="card">QA checklist formalized in Vibe Coder spec</div>
       <div class="card">Standard build checklist automated</div>
 
