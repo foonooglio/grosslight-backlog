@@ -25,6 +25,7 @@
     .done .card { border-left-color: #15803d; color: #475569; }
     .in-progress .card { border-left-color: #1d4ed8; font-weight: 500; }
     .todo .card { border-left-color: #e2e8f0; }
+    .backburner .card { border-left-color: #6d28d9; color: #475569; }
     .section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #94a3b8; margin: 1rem 0 0.4rem; padding-left: 0.25rem; }
     .updated { text-align: center; font-size: 0.7rem; color: #94a3b8; padding: 1rem; }
   </style>
@@ -41,56 +42,62 @@
 
     <!-- DONE -->
     <div class="column done">
-      <div class="column-header">✅ Done <span class="count">22</span></div>
-      <div class="card">VPS setup (Hetzner, Ubuntu, OpenClaw)</div>
+      <div class="column-header">✅ Done <span class="count">38</span></div>
+
+      <div class="section-label">Infrastructure</div>
+      <div class="card">VPS setup (Hetzner, Ubuntu, OpenClaw, systemd)</div>
       <div class="card">Anthropic API connected</div>
-      <div class="card">Discord + Telegram channels</div>
+      <div class="card">Discord + Telegram channels connected</div>
       <div class="card">Obsidian vault synced via Git to VPS</div>
       <div class="card">GitHub API integration</div>
       <div class="card">Vercel API integration</div>
       <div class="card">Cloudflare DNS API (full automation)</div>
-      <div class="card">Automated deploy pipeline proven</div>
+      <div class="card">Supabase account + standard auth schema (RLS, orgs, profiles)</div>
+      <div class="card">Google Workspace: charles@grosslightconsulting.com</div>
+
+      <div class="section-label">Agent Pipeline</div>
+      <div class="card">Brief Builder webhook server (port 3100, systemd)</div>
+      <div class="card">Full pipeline proven: form → brief → BUILD NOW → live URL</div>
+      <div class="card">Deploy Verifier (port 3300, systemd) — Vibe Coder gate</div>
+      <div class="card">Status API (port 3200, systemd)</div>
+      <div class="card">Brief Builder: quality score + complexity + cost estimate</div>
+      <div class="card">Brief Builder: tech stack detection (Stripe, Maps, SendGrid, etc.)</div>
+      <div class="card">Auto-build removed — all builds require BUILD NOW confirmation</div>
+
+      <div class="section-label">Governance & Specs</div>
+      <div class="card">Sect Governance document (full hierarchy + Dao)</div>
+      <div class="card">Vibe Coder spec v1.1 (deploy verification gate)</div>
+      <div class="card">Master Build Prompt Template v1.0</div>
+      <div class="card">Vibe Coder Default Style Guide v3.0</div>
+      <div class="card">All 4 agent specs written</div>
       <div class="card">Note Standards + vault structure</div>
-      <div class="card">Current-State.md cross-channel sync</div>
-      <div class="card">Launch Plan v2.0</div>
-      <div class="card">Client Profile Form (with A/B routing)</div>
-      <div class="card">Type A Intake Form v1.0</div>
-      <div class="card">Type B Intake Form v1.0</div>
-      <div class="card">Hall of Alchemy pipeline documented</div>
-      <div class="card">Sect Governance document</div>
-      <div class="card">Accounts & Tech Stack note</div>
-      <div class="card">Backlog kanban page deployed</div>
-      <div class="card">Supabase account + org connected</div>
-      <div class="card">Auth layer design (RLS, roles, org isolation)</div>
-      <div class="card">Supabase standard schema deployed to DB</div>
-      <div class="card">Iglesias Dairy — Supabase auth + login page (DEMO #7)</div>
+      <div class="card">Charles Profile + Dao documents</div>
+      <div class="card">Sect Registry, Vision, Org Structure docs</div>
+
+      <div class="section-label">Client-Facing</div>
+      <div class="card">app.grosslightconsulting.com — intake app v25 (Supabase auth, Type A/B, ES/EN)</div>
+      <div class="card">backlog.grosslightconsulting.com — kanban board</div>
+      <div class="card">status.grosslightconsulting.com — system status dashboard</div>
+      <div class="card">Grosslight Consulting Discord server (4 categories, 11 channels)</div>
+      <div class="card">Akumetsu Sect Discord server (4 categories, 12 channels)</div>
+
+      <div class="section-label">Demo Builds</div>
+      <div class="card">iglesiasdairy.grosslightconsulting.com — DEMO #7 (Supabase auth, cow tracking)</div>
+      <div class="card">jorge-montalvo.grosslightconsulting.com — DEMO #1 (kanban, chemicals, team)</div>
     </div>
 
     <!-- IN PROGRESS -->
     <div class="column in-progress">
-      <div class="column-header">🔄 In Progress <span class="count">1</span></div>
+      <div class="column-header">🔄 In Progress <span class="count">2</span></div>
+      <div class="card">Luis (Type B) test build — end-to-end verification</div>
       <div class="card">Tech Stack notes (Vercel, GitHub, Cloudflare, Anthropic)</div>
     </div>
 
     <!-- TO DO -->
     <div class="column todo">
-      <div class="column-header">📋 To Do <span class="count">28</span></div>
+      <div class="column-header">📋 To Do <span class="count">18</span></div>
 
-      <div class="section-label">Process Layer</div>
-      <div class="card">Master Build Prompt Template</div>
-      <div class="card">Brief Builder agent spec + system prompt</div>
-      <div class="card">Researcher agent spec + system prompt</div>
-      <div class="card">Prompt Architect agent spec + system prompt</div>
-      <div class="card">Vibe Coder Outer Disciple formal spec</div>
-      <div class="card">Test each Hall of Alchemy agent in isolation</div>
-      <div class="card">Run full simulated case study</div>
-
-      <div class="section-label">Vibe Coder Production Readiness</div>
-      <div class="card">Migrate Iglesias Dairy pages to Supabase (replace localStorage)</div>
-      <div class="card">QA checklist formalized in Vibe Coder spec</div>
-      <div class="card">Standard build checklist automated</div>
-
-      <div class="section-label">Website & Landing Page</div>
+      <div class="section-label">Landing Page & Launch</div>
       <div class="card">Landing page design + copy</div>
       <div class="card">Landing page deployed to grosslightconsulting.com</div>
       <div class="card">Socratic AI chatbot embedded on landing page</div>
@@ -99,45 +106,53 @@
       <div class="card">About section (Charles's background)</div>
 
       <div class="section-label">Portfolio Case Studies</div>
-      <div class="card">Case study #1 — brief, build, deploy, document</div>
-      <div class="card">Case study #2 — brief, build, deploy, document</div>
+      <div class="card">Case study #1 — brief, build, deploy, document, screen recording</div>
+      <div class="card">Case study #2 — brief, build, deploy, document, screen recording</div>
 
       <div class="section-label">Client Operations</div>
-      <div class="card">Per-client project note template</div>
-      <div class="card">Per-client Discord channel setup process</div>
-      <div class="card">Client agent persona template</div>
-      <div class="card">Pricing framework written</div>
-      <div class="card">Positioning one-pager written</div>
+      <div class="card">Pricing framework (B2B, B2C, retainer tiers)</div>
+      <div class="card">Positioning one-pager</div>
+      <div class="card">Per-client agent persona template</div>
+      <div class="card">Client onboarding process documented</div>
 
-      <div class="section-label">Email & Comms</div>
-      <div class="card">Brand Supabase transactional emails (password reset, etc.) when needed</div>
+      <div class="section-label">Security (Before First Client)</div>
+      <div class="card">Hall of Sentinels cybersecurity review</div>
+      <div class="card">HTTPS on VPS (nginx + Let's Encrypt)</div>
 
       <div class="section-label">Full Dry Run</div>
-      <div class="card">Full client journey dry run</div>
-      <div class="card">First real client engaged</div>
+      <div class="card">Full client journey dry run (website → chatbot → intake → call → build → delivery)</div>
+      <div class="card">All friction points documented and resolved</div>
+      <div class="card">First real client engaged (Jorge / Iglesias Dairy candidate)</div>
+      <div class="card">Vercel Pro upgrade (required before first paying client deploys)</div>
     </div>
 
     <!-- BACKBURNER -->
     <div class="column backburner">
-      <div class="column-header">🔵 Backburner <span class="count" id="backburner-count">10</span></div>
+      <div class="column-header">🔵 Backburner <span class="count">14</span></div>
 
       <div class="section-label">Cost & Token Tracking</div>
       <div class="card">Token logging on API calls → Supabase</div>
       <div class="card">Cost Monitor Disciple (daily API charge checker)</div>
       <div class="card">Tax Doc Builder Disciple (quarterly expense report)</div>
+      <div class="card">Status Dashboard — live token feed</div>
 
       <div class="section-label">AI Architecture</div>
-      <div class="card">Evangelion Grand Elder Council (3-model consensus system)</div>
-      <div class="card">Status Dashboard — live token feed (after token logging built)</div>
+      <div class="card">Evangelion Grand Elder Council (3-model consensus)</div>
+      <div class="card">Opus Grand Elder invocation skill</div>
 
       <div class="section-label">Automation Disciples</div>
-      <div class="card">Domain Health Monitor Disciple (subdomain uptime checks)</div>
-      <div class="card">Kanban Sync Disciple (verbal update → backlog auto-update)</div>
+      <div class="card">Domain Health Monitor Disciple</div>
+      <div class="card">Kanban Sync Disciple</div>
+      <div class="card">Sprint Status Reporter Disciple</div>
+      <div class="card">Client Onboarding Disciple</div>
 
       <div class="section-label">Channels (Deferred)</div>
       <div class="card">WhatsApp channel (after first paying client)</div>
-      <div class="card">Email channel via Gmail Pub/Sub (needs Tailscale + gcloud)</div>
-      <div class="card">Voice channels (OpenClaw voice not supported yet)</div>
+      <div class="card">Email channel via Gmail Pub/Sub</div>
+      <div class="card">Voice channels (not yet supported)</div>
+
+      <div class="section-label">Infrastructure</div>
+      <div class="card">openclaw.json routing for multiple Discord servers</div>
     </div>
 
   </div>
