@@ -35,7 +35,7 @@
   <header>
     <div style="flex:1">
       <h1>🐄 Grosslight Consulting</h1>
-      <div class="subtitle">Last updated: 2026-04-04 · Managed by Aku</div>
+      <div class="subtitle">Last updated: 2026-04-05 · Managed by Aku</div>
     </div>
     <div style="display:flex;gap:0.5rem">
       <button onclick="showTab('kanban')" id="tab-kanban" style="background:white;color:#15803d;border:none;padding:0.4rem 1rem;border-radius:1rem;font-weight:700;cursor:pointer;font-size:0.85rem">Kanban</button>
@@ -48,13 +48,14 @@
 
     <!-- DONE -->
     <div class="column done">
-      <div class="column-header">✅ Done <span class="count">40</span></div>
+      <div class="column-header">✅ Done <span class="count">41</span></div>
 
       <div class="section-label">Infrastructure</div>
       <div class="card">VPS setup (Hetzner, Ubuntu, OpenClaw, systemd)</div>
       <div class="card">Anthropic API connected</div>
       <div class="card">Discord + Telegram channels connected</div>
       <div class="card">Obsidian vault synced via Git to VPS</div>
+      <div class="card">Clean Obsidian working vault recovered and verified via GitHub auto-sync test</div>
       <div class="card">GitHub API integration</div>
       <div class="card">Vercel API integration</div>
       <div class="card">Cloudflare DNS API (full automation)</div>
@@ -96,8 +97,10 @@
 
     <!-- IN PROGRESS -->
     <div class="column in-progress">
-      <div class="column-header">🔄 In Progress <span class="count">2</span></div>
+      <div class="column-header">🔄 In Progress <span class="count">3</span></div>
       <div class="card">Luis (Type B) test build — end-to-end verification</div>
+      <div class="card">Obsidian working vault migration — first markdown batch moved into clean repo</div>
+      <div class="card">Archive policy rollout — split active markdown vault from bulky raw source archive</div>
       <div class="card">Tech Stack notes (Vercel, GitHub, Cloudflare, Anthropic)</div>
       <div class="card">Deploy Verification Disciple — separate into own service, automate Vibe Coder → Verifier handoff</div>
       <div class="card">Carl Carlson (B2C) autofill button added to intake form (v27)</div>
@@ -135,6 +138,12 @@
       <div class="card">Supabase token_log table + Vibe Coder logging per API call</div>
       <div class="card">Deploy Verifier: query token totals + include in completion alert</div>
       <div class="card">Session start/end SOP: Aku prompts for token snapshot before client work</div>
+
+      <div class="section-label">Obsidian Working Vault — Next Moves</div>
+      <div class="card next">▶ Obsidian todo: verify migrated markdown batch appears in clean vault on laptop</div>
+      <div class="card next">▶ Obsidian todo: route all new markdown work into correct folders in the clean Akumetsu vault</div>
+      <div class="card">Obsidian todo: distill old Background/ material into lean markdown summaries before importing heavy files</div>
+      <div class="card">Obsidian todo: define separate raw archive location outside the working Git vault</div>
 
       <div class="section-label">3b — Business (before first paid client)</div>
       <div class="card">Pricing framework — $50 call, $50/$100/hr, token cost tracking per client</div>
