@@ -109,14 +109,20 @@
 
     <!-- TO DO -->
     <div class="column todo">
-      <div class="column-header">📋 To Do <span class="count">21</span></div>
+      <div class="column-header">📋 To Do <span class="count">25</span></div>
 
       <div class="section-label">0 — Model Cost Optimization (highest priority)</div>
       <div class="card next">▶ Test open-source/free models for Vibe Coder (Groq, Gemini Flash) — reduce per-build cost before more builds</div>
       <div class="card next">▶ Set up model routing in OpenClaw (free models for light tasks, Sonnet for hard tasks)</div>
       <div class="card next">▶ Local OpenClaw on Charles's laptop (backburner: see Backburner tab)</div>
 
-      <div class="section-label">1 — Pipeline (do first)</div>
+      <div class="section-label">1 — Pipeline Tests — Build Quality</div>
+      <div class="card">▶ Test #2: Carl Carlson (tic-tac-toe game) — verify playbook board, X/O pieces, turn switching, score tracking, reset button all functional. Brief in Supabase intake_submissions, scaffold + updated prompt in place. Context: vault Tech/Pipeline-Test-Results.md</div>
+      <div class="card">▶ Test #3: Multi-page business app (Type B intake) — verify client dashboard, reports page, inter-page navigation, mock data displays. Scaffold foundation required. Context: vault Tech/Pipeline-Test-Results.md</div>
+      <div class="card">▶ Test #4: Integration-heavy build (external API or Stripe) — verify agent handles integrations properly (mock vs. real). Tests assumption discipline. Context: vault Tech/Pipeline-Test-Results.md</div>
+      <div class="card">▶ Test #5: Iteration mode — take a deployed app, give feedback ("make it premium", "add feature"), verify it improves without breaking existing functionality. Context: vault Tech/Pipeline-Test-Results.md</div>
+
+      <div class="section-label">2 — Pipeline (do after tests)</div>
       <div class="card next">▶ Implement lightweight webhook receiver + on-demand Brief Builder (spec: Webhook-Receiver-Spec.md in vault, Sect/Plans/)</div>
       <div class="card next">▶ Implement lightweight webhook receiver + on-demand Brief Builder (spec: Webhook-Receiver-Spec.md in vault, Sect/Plans/)</div>
       <div class="card next">▶ Day-before dry run: Carl form → webhook → alert → brief (no BUILD NOW) — verify all disciples fire correctly</div>
